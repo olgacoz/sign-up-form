@@ -16,6 +16,16 @@
   padding: 0;
 }
 
+input, button, textarea, select {
+  font: inherit;
+}
+
+:root {
+  --main-bg: #f9fafb;
+  --main-padding-left: 50px;
+  --bluish: #2f3945;
+}
+
 img {
   display: block;
 }
@@ -24,10 +34,11 @@ body {
   display: flex;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--main-bg);
 }
 
 #hero {
-  width: 30%;
+  width: 40%;
   position: relative;
 }
 
@@ -56,4 +67,51 @@ body {
 #hero-image {
   height: 100vh;
   width: 100%;
+}
+
+#main {
+  flex: 1;
+}
+
+#top-section {
+  font-size: 1.5rem;
+  padding: 150px 0 50px var(--main-padding-left);
+}
+
+#mid-section {
+  background-color: white;
+  padding: 15px 0 40px var(--main-padding-left);
+}
+
+#bottom-section {
+  padding-left: var(--main-padding-left);
+}
+
+#mid-section > p {
+  font-size: 1.5rem;
+  color: var(--bluish);
+  margin-bottom: 20px;
+}
+
+#form-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 60px;
+}
+
+input {
+  display: block;
+  width: 250px;
+  padding: 4px 0px 4px 4px;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: var(--bluish);
 }
