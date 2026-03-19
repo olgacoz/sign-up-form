@@ -1,13 +1,15 @@
 @font-face {
-    font-family: 'Welcome Darling';
-    src: url('fonts/WelcomeDarling.woff2') format('woff2'),
-        url('font/sWelcomeDarling.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Welcome Darling';
+  src: url('fonts/WelcomeDarling.woff2') format('woff2'),
+    url('font/sWelcomeDarling.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -16,7 +18,10 @@
   padding: 0;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -27,6 +32,7 @@ input, button, textarea, select {
   --blue: #1877F2;
   --darker-blue: #166FE5;
   --darkest-blue: #145DBF;
+  --shadow-color: rgb(206, 206, 206);
 }
 
 img {
@@ -85,7 +91,7 @@ body {
   background-color: white;
   padding: 15px 0 40px var(--main-padding-left);
   margin-bottom: 30px;
-  box-shadow: 0px 4px 5px rgb(206, 206, 206);
+  box-shadow: 0px 4px 5px var(--shadow-color);
 }
 
 #bottom-section {
@@ -113,6 +119,18 @@ input {
   display: block;
   width: 250px;
   padding: 4px 0px 4px 4px;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid var(--blue);
+  box-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+input[type="password"]:invalid {
+  border: 1px solid red;
 }
 
 label {
