@@ -1,0 +1,1 @@
+This project is about creating a sign-up form for an imaginary service.
