@@ -161,7 +161,7 @@ button:hover {
 }
 
 button:active {
-  background-color: var(--darkest-blue)
+  background-color: var(--darkest-blue);
 }
 
 #bottom-section a {
