@@ -92,7 +92,7 @@ body {
 
 #mid-section {
   background-color: white;
-  padding: 15px 0 40px var(--main-padding-left);
+  padding: 15px 0 20px var(--main-padding-left);
   margin-bottom: 30px;
   box-shadow: 0px 4px 5px var(--shadow-color);
 }
@@ -110,12 +110,14 @@ body {
 #form-rows {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* row-gap: 20px; */
 }
 
 .form-row {
   display: flex;
-  gap: 60px;
+  flex-wrap: wrap;
+  column-gap: 60px;
+  flex-wrap: wrap;
 }
 
 input {
@@ -125,6 +127,7 @@ input {
   border: 1px solid #E5E7EB;
   border-radius: 3px;
   outline: none;
+  margin-bottom: 20px;
 }
 
 input:focus {
